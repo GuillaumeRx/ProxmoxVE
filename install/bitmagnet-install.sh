@@ -12,6 +12,13 @@ setting_up_container
 network_check
 update_os
 
+msg_info "Installing Dependencies"
+$STD apt-get install -y \
+  curl \
+  sudo \
+  mc
+msg_ok "Installed Dependencies"
+
 msg_info "Installing Golang"
 cd /tmp
 set +o pipefail
