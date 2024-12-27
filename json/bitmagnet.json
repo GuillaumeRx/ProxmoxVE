@@ -1,0 +1,43 @@
+{
+  "name": "bitmagnet",
+  "slug": "bitmagnet",
+  "categories": [
+      11
+  ],
+  "date_created": "2024-12-27",
+  "type": "ct",
+  "updateable": true,
+  "privileged": false,
+  "interface_port": 3333,
+  "documentation": "https://bitmagnet.io/",
+  "website": "https://bitmagnet.io/",
+  "logo": "https://raw.githubusercontent.com/bitmagnet-io/bitmagnet/refs/heads/main/bitmagnet.io/assets/images/favicon.png",
+  "description": "A self-hosted BitTorrent indexer, DHT crawler, content classifier and torrent search engine with web UI, GraphQL API and Servarr stack integration.",
+  "install_methods": [
+      {
+          "type": "default",
+          "script": "ct/bitmagnet.sh",
+          "resources": {
+              "cpu": 1,
+              "ram": 1024,
+              "hdd": 8,
+              "os": "debian",
+              "version": "12"
+          }
+      }
+  ],
+  "default_credentials": {
+      "username": null,
+      "password": null
+  },
+  "notes": [
+    {
+      "text": "Bitmagnet Configuration Path: `/etc/bitmagnet/config.yml`",
+      "type": "info"
+    },
+    {
+      "text": "Bitmagnet can take a lot of disk space. Resize accordingly. See `https://bitmagnet.io/faq.html#what-are-the-system-requirements-for-bitmagnet`",
+      "type": "warning"
+    }
+  ]
+}
